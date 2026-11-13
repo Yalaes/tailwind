@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-dark-blue: oklch(21.613% 0.09471 275.052);
+  --font-arial: arial, sans-serif;
+}
+
+@utility grid-cols-autofit {
+  grid-template-columns: repeat(auto-fit, minmax(13.75rem, 1fr));
+}
+
+@layer base {
+  h1,
+  h2,
+  h3,
+  a {
+    font-weight: bold;
+  }
+}
+
+@layer components {
+  .button {
+    @apply inline-block transition-colors bg-fuchsia-900 px-7 py-3 rounded-full hover:bg-fuchsia-700;
+  }
+}
